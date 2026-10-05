@@ -7,10 +7,10 @@ authors:
     affiliation: University of Bonn
   - family-names: Gerlach
     given-names: Thore
-    affiliation: European Space Agency (ESA)
+    affiliation: European Space Agency
   - family-names: Bauckhage
     given-names: Christian
-    affiliation: Lamarr Institute, University of Bonn
+    affiliation: University of Bonn
 license: CC-BY-4.0
 repository-code: "https://github.com/Newida/ME-DQAS"
 preferred-citation:
