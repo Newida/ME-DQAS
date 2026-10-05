@@ -1,0 +1,25 @@
+{
+  "x_axis": "shots",
+  "metric": "best-so-far",
+  "normalize": "exact-range",
+  "support": "intersection",
+  "num_curves": {
+    "DQAS": 100,
+    "ME-DQAS": 100
+  },
+  "final_mean": {
+    "DQAS": 0.832726767447454,
+    "ME-DQAS": 0.6734661080129537
+  },
+  "final_ci95": {
+    "DQAS": 0.014317797983606897,
+    "ME-DQAS": 0.024418642815499048
+  },
+  "outputs": [
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_shots.png",
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_shots.pdf",
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_shots.svg"
+  ],
+  "objective_label": "mean uncut edges",
+  "dataset_dir": "dataset/100_maxcut_search"
+}

@@ -1,0 +1,25 @@
+{
+  "x_axis": "updates",
+  "metric": "best-so-far",
+  "normalize": "exact-range",
+  "support": "intersection",
+  "num_curves": {
+    "DQAS": 100,
+    "ME-DQAS": 100
+  },
+  "final_mean": {
+    "DQAS": 0.832684256628788,
+    "ME-DQAS": 0.8325040630463283
+  },
+  "final_ci95": {
+    "DQAS": 0.01439310885269123,
+    "ME-DQAS": 0.014409237302672167
+  },
+  "outputs": [
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_updates.png",
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_updates.pdf",
+    "dataset/100_maxcut_search/mean_ci_best_so_far_vs_updates.svg"
+  ],
+  "objective_label": "mean uncut edges",
+  "dataset_dir": "dataset/100_maxcut_search"
+}

@@ -1,0 +1,60 @@
+{
+  "objective_updates": {
+    "DQAS": {
+      "mean": 8.99,
+      "ci95": 0.0196,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 14.05,
+      "ci95": 0.0429324110572877,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": -5.06,
+      "ci95": 0.04678191828888463,
+      "n": 100
+    }
+  },
+  "theta_full_cost_ratio": {
+    "DQAS": {
+      "mean": 1.0,
+      "ci95": 0.0,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 0.5856792338779893,
+      "ci95": 0.0013506951190810077,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": 0.41432076612201085,
+      "ci95": 0.0013506951190810075,
+      "n": 100
+    }
+  },
+  "final_best_so_far_normalized_loss": {
+    "DQAS": {
+      "mean": 0.4002975911732581,
+      "ci95": 0.03902602827289768,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 0.3862996184458635,
+      "ci95": 0.03678500030167533,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": 0.013997972727394583,
+      "ci95": 0.004015155177954834,
+      "n": 100
+    }
+  },
+  "outputs": [
+    "dataset/100_problem_search/bar_summary.png",
+    "dataset/100_problem_search/bar_summary.pdf",
+    "dataset/100_problem_search/bar_summary.svg"
+  ],
+  "dataset_dir": "dataset/100_problem_search",
+  "num_problems": 100
+}

@@ -1,0 +1,115 @@
+{
+  "label": "search_alpha1.5_seed20260683",
+  "seed": 20260683,
+  "problem_seed": 20260683,
+  "objective_seed": 20260684,
+  "probability_seed": 20260685,
+  "theta_seed": 20260686,
+  "n": 8,
+  "alpha": 1.5,
+  "problem_mode": "random",
+  "num_clauses": 12,
+  "clauses": [
+    [
+      0,
+      6,
+      7
+    ],
+    [
+      -3,
+      3,
+      5
+    ],
+    [
+      1,
+      -4,
+      5
+    ],
+    [
+      -2,
+      3,
+      5
+    ],
+    [
+      -2,
+      -7,
+      7
+    ],
+    [
+      -1,
+      2,
+      3
+    ],
+    [
+      1,
+      -5,
+      6
+    ],
+    [
+      0,
+      4,
+      -6
+    ],
+    [
+      -4,
+      4,
+      -8
+    ],
+    [
+      1,
+      4,
+      7
+    ],
+    [
+      -4,
+      4,
+      6
+    ],
+    [
+      -1,
+      -2,
+      6
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_violations": 2,
+  "exact_enumerated": true,
+  "exact_min_violations": 0,
+  "exact_max_violations": 4,
+  "num_exact_min_assignments": 38,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 9,
+      "initial_loss": 2.0084375,
+      "final_loss": 1.8690624999999998,
+      "best_loss": 1.8546875,
+      "loss_span": 0.16562500000000013,
+      "loss_drop_to_best": 0.15374999999999983,
+      "batch_range_span": 1.6600000000000001,
+      "mean_batch_width": 1.4044444444444446
+    },
+    "ME-DQAS": {
+      "objective_updates": 14,
+      "initial_loss": 2.0084375,
+      "final_loss": 1.6875,
+      "best_loss": 1.6671874999999998,
+      "loss_span": 0.3529687500000005,
+      "loss_drop_to_best": 0.34125000000000005,
+      "batch_range_span": 2.0,
+      "mean_batch_width": 1.4885714285714287
+    }
+  }
+}

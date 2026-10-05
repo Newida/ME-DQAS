@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "label": "3-SAT",
+      "dataset_dir": "dataset/100_problem_search",
+      "problem_count": 100,
+      "mean_zero_gradient_reduction": 0.3313460181213626,
+      "mean_diagonal_suffix_reduction": 0.08297474800064814,
+      "mean_clifford_suffix_reduction": 0.0,
+      "mean_one_shift_reduction": 0.08297474800064814,
+      "mean_total_reduction": 0.41432076612201085,
+      "ci95_total_reduction": 0.0013506951190810094,
+      "total_conventional_theta_shot_cost": 115191300,
+      "total_zero_gradient_shots_saved": 38168700,
+      "total_diagonal_suffix_shots_saved": 9557750,
+      "total_clifford_suffix_shots_saved": 0,
+      "total_one_shift_shots_saved": 9557750,
+      "total_shots_saved": 47726450
+    },
+    {
+      "label": "MaxCut",
+      "dataset_dir": "dataset/100_maxcut_search",
+      "problem_count": 100,
+      "mean_zero_gradient_reduction": 0.3122289330180832,
+      "mean_diagonal_suffix_reduction": 0.08086919842190904,
+      "mean_clifford_suffix_reduction": 0.0004704331814992058,
+      "mean_one_shift_reduction": 0.08133963160340825,
+      "mean_total_reduction": 0.3935685646214913,
+      "ci95_total_reduction": 0.004561759531869601,
+      "total_conventional_theta_shot_cost": 112999700,
+      "total_zero_gradient_shots_saved": 35372100,
+      "total_diagonal_suffix_shots_saved": 9132000,
+      "total_clifford_suffix_shots_saved": 60200,
+      "total_one_shift_shots_saved": 9192200,
+      "total_shots_saved": 44564300
+    }
+  ],
+  "outputs": {
+    "png": "dataset/me_dqas_reduction_breakdown.png",
+    "pdf": "dataset/me_dqas_reduction_breakdown.pdf",
+    "svg": "dataset/me_dqas_reduction_breakdown.svg"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "label": "search_alpha1.5_seed20260781",
+  "seed": 20260781,
+  "problem_seed": 20260781,
+  "objective_seed": 20260782,
+  "probability_seed": 20260783,
+  "theta_seed": 20260784,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 1.5,
+  "problem_mode": "random",
+  "num_edges": 12,
+  "edges": [
+    [
+      4,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 12,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 2,
+  "exact_max_uncut_edges": 12,
+  "exact_max_cut_edges": 10,
+  "num_exact_min_assignments": 4,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 9,
+      "initial_loss": 11.6140625,
+      "final_loss": 11.059444444444445,
+      "best_loss": 11.059444444444445,
+      "loss_span": 0.5546180555555544,
+      "loss_drop_to_best": 0.5546180555555544,
+      "batch_range_span": 2.4399999999999995,
+      "mean_batch_width": 1.7999999999999998
+    },
+    "ME-DQAS": {
+      "objective_updates": 14,
+      "initial_loss": 11.614531250000002,
+      "final_loss": 10.349687500000002,
+      "best_loss": 10.349687500000002,
+      "loss_span": 1.2648437500000007,
+      "loss_drop_to_best": 1.2648437500000007,
+      "batch_range_span": 3.460000000000001,
+      "mean_batch_width": 2.2214285714285715
+    }
+  }
+}

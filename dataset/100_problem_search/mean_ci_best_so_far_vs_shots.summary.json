@@ -1,0 +1,25 @@
+{
+  "x_axis": "shots",
+  "metric": "best-so-far",
+  "normalize": "exact-range",
+  "support": "intersection",
+  "num_curves": {
+    "DQAS": 100,
+    "ME-DQAS": 100
+  },
+  "final_mean": {
+    "DQAS": 0.4002975911732582,
+    "ME-DQAS": 0.38629961844586347
+  },
+  "final_ci95": {
+    "DQAS": 0.03902602827289768,
+    "ME-DQAS": 0.03678500030167532
+  },
+  "outputs": [
+    "dataset/100_problem_search/mean_ci_best_so_far_vs_shots.png",
+    "dataset/100_problem_search/mean_ci_best_so_far_vs_shots.pdf",
+    "dataset/100_problem_search/mean_ci_best_so_far_vs_shots.svg"
+  ],
+  "objective_label": "mean violated clauses",
+  "dataset_dir": "dataset/100_problem_search"
+}

@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260780",
+  "seed": 20260780,
+  "problem_seed": 20260780,
+  "objective_seed": 20260781,
+  "probability_seed": 20260782,
+  "theta_seed": 20260783,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 4,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 12,
+  "num_exact_min_assignments": 4,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 8,
+      "initial_loss": 15.1075,
+      "final_loss": 11.048906249999998,
+      "best_loss": 11.048906249999998,
+      "loss_span": 4.058593750000002,
+      "loss_drop_to_best": 4.058593750000002,
+      "batch_range_span": 7.18,
+      "mean_batch_width": 5.135
+    },
+    "ME-DQAS": {
+      "objective_updates": 14,
+      "initial_loss": 15.1115625,
+      "final_loss": 9.11890625,
+      "best_loss": 9.11890625,
+      "loss_span": 5.99265625,
+      "loss_drop_to_best": 5.99265625,
+      "batch_range_span": 8.82,
+      "mean_batch_width": 6.307142857142858
+    }
+  }
+}

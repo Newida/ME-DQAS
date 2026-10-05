@@ -1,0 +1,60 @@
+{
+  "objective_updates": {
+    "DQAS": {
+      "mean": 8.56,
+      "ci95": 0.09778197970769234,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 13.54,
+      "ci95": 0.13481770108280486,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": -4.98,
+      "ci95": 0.1306072592225109,
+      "n": 100
+    }
+  },
+  "theta_full_cost_ratio": {
+    "DQAS": {
+      "mean": 1.0,
+      "ci95": 0.0,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 0.6064314353785086,
+      "ci95": 0.004561759531869602,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": 0.3935685646214913,
+      "ci95": 0.004561759531869602,
+      "n": 100
+    }
+  },
+  "final_best_so_far_normalized_loss": {
+    "DQAS": {
+      "mean": 0.8327267674474541,
+      "ci95": 0.014317797983606897,
+      "n": 100
+    },
+    "ME-DQAS": {
+      "mean": 0.673466108012954,
+      "ci95": 0.024418642815499048,
+      "n": 100
+    },
+    "paired_delta_dqas_minus_me_dqas": {
+      "mean": 0.15926065943450005,
+      "ci95": 0.012292686393842036,
+      "n": 100
+    }
+  },
+  "outputs": [
+    "dataset/100_maxcut_search/bar_summary.png",
+    "dataset/100_maxcut_search/bar_summary.pdf",
+    "dataset/100_maxcut_search/bar_summary.svg"
+  ],
+  "dataset_dir": "dataset/100_maxcut_search",
+  "num_problems": 100
+}

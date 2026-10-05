@@ -1,0 +1,21 @@
+{
+  "x_axis": "shots",
+  "metric": "loss",
+  "normalize": "exact-range",
+  "num_curves": {
+    "DQAS": 12,
+    "ME-DQAS": 12
+  },
+  "final_mean": {
+    "DQAS": 0.3707147485896329,
+    "ME-DQAS": 0.3694996744791667
+  },
+  "final_ci95": {
+    "DQAS": 0.13673704415040425,
+    "ME-DQAS": 0.13479377415487423
+  },
+  "outputs": [
+    "dataset/100_problem_search/mean_ci_preview.pdf",
+    "dataset/100_problem_search/mean_ci_preview.png"
+  ]
+}

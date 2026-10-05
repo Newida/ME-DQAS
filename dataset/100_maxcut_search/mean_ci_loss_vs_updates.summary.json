@@ -1,0 +1,25 @@
+{
+  "x_axis": "updates",
+  "metric": "loss",
+  "normalize": "exact-range",
+  "support": "intersection",
+  "num_curves": {
+    "DQAS": 100,
+    "ME-DQAS": 100
+  },
+  "final_mean": {
+    "DQAS": 0.8327729561237376,
+    "ME-DQAS": 0.8325885643089547
+  },
+  "final_ci95": {
+    "DQAS": 0.01441186557475184,
+    "ME-DQAS": 0.014427384822008485
+  },
+  "outputs": [
+    "dataset/100_maxcut_search/mean_ci_loss_vs_updates.png",
+    "dataset/100_maxcut_search/mean_ci_loss_vs_updates.pdf",
+    "dataset/100_maxcut_search/mean_ci_loss_vs_updates.svg"
+  ],
+  "objective_label": "mean uncut edges",
+  "dataset_dir": "dataset/100_maxcut_search"
+}

@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260787",
+  "seed": 20260787,
+  "problem_seed": 20260787,
+  "objective_seed": 20260788,
+  "probability_seed": 20260789,
+  "theta_seed": 20260790,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      0,
+      7
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 4,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 12,
+  "num_exact_min_assignments": 4,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 8,
+      "initial_loss": 15.4659375,
+      "final_loss": 14.296875,
+      "best_loss": 14.296875,
+      "loss_span": 1.1690625000000008,
+      "loss_drop_to_best": 1.1690625000000008,
+      "batch_range_span": 3.6999999999999993,
+      "mean_batch_width": 2.605
+    },
+    "ME-DQAS": {
+      "objective_updates": 13,
+      "initial_loss": 15.465468750000001,
+      "final_loss": 12.46953125,
+      "best_loss": 12.46953125,
+      "loss_span": 2.995937500000002,
+      "loss_drop_to_best": 2.995937500000002,
+      "batch_range_span": 6.640000000000001,
+      "mean_batch_width": 3.5938461538461537
+    }
+  }
+}

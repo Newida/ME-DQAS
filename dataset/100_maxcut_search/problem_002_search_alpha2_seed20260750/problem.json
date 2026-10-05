@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260750",
+  "seed": 20260750,
+  "problem_seed": 20260750,
+  "objective_seed": 20260751,
+  "probability_seed": 20260752,
+  "theta_seed": 20260753,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 5,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 11,
+  "num_exact_min_assignments": 12,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 9,
+      "initial_loss": 15.364218750000003,
+      "final_loss": 13.490434782608691,
+      "best_loss": 13.490434782608691,
+      "loss_span": 1.8900339673913091,
+      "loss_drop_to_best": 1.8737839673913115,
+      "batch_range_span": 5.18,
+      "mean_batch_width": 3.368888888888889
+    },
+    "ME-DQAS": {
+      "objective_updates": 13,
+      "initial_loss": 15.36515625,
+      "final_loss": 10.53125,
+      "best_loss": 10.53125,
+      "loss_span": 4.854374999999999,
+      "loss_drop_to_best": 4.83390625,
+      "batch_range_span": 8.16,
+      "mean_batch_width": 4.621538461538462
+    }
+  }
+}

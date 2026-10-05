@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260773",
+  "seed": 20260773,
+  "problem_seed": 20260773,
+  "objective_seed": 20260774,
+  "probability_seed": 20260775,
+  "theta_seed": 20260776,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 3,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 13,
+  "num_exact_min_assignments": 4,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 8,
+      "initial_loss": 15.180625,
+      "final_loss": 13.580312500000002,
+      "best_loss": 13.580312500000002,
+      "loss_span": 1.6003124999999976,
+      "loss_drop_to_best": 1.6003124999999976,
+      "batch_range_span": 5.34,
+      "mean_batch_width": 3.9675000000000002
+    },
+    "ME-DQAS": {
+      "objective_updates": 13,
+      "initial_loss": 15.181093749999999,
+      "final_loss": 11.235937499999999,
+      "best_loss": 11.235937499999999,
+      "loss_span": 3.94515625,
+      "loss_drop_to_best": 3.94515625,
+      "batch_range_span": 7.34,
+      "mean_batch_width": 4.873846153846154
+    }
+  }
+}

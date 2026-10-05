@@ -1,0 +1,11 @@
+{
+  "datasets": [
+    "3-SAT",
+    "MaxCut"
+  ],
+  "outputs": [
+    "dataset/bar_summary_paper.png",
+    "dataset/bar_summary_paper.pdf",
+    "dataset/bar_summary_paper.svg"
+  ]
+}

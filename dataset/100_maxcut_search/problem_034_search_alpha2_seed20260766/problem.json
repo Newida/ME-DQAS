@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260766",
+  "seed": 20260766,
+  "problem_seed": 20260766,
+  "objective_seed": 20260767,
+  "probability_seed": 20260768,
+  "theta_seed": 20260769,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      2,
+      7
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 4,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 12,
+  "num_exact_min_assignments": 2,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 8,
+      "initial_loss": 15.53015625,
+      "final_loss": 14.35625,
+      "best_loss": 14.35625,
+      "loss_span": 1.17390625,
+      "loss_drop_to_best": 1.17390625,
+      "batch_range_span": 4.119999999999999,
+      "mean_batch_width": 2.76
+    },
+    "ME-DQAS": {
+      "objective_updates": 13,
+      "initial_loss": 15.5321875,
+      "final_loss": 11.7265625,
+      "best_loss": 11.7265625,
+      "loss_span": 3.805624999999999,
+      "loss_drop_to_best": 3.805624999999999,
+      "batch_range_span": 6.539999999999999,
+      "mean_batch_width": 3.8430769230769233
+    }
+  }
+}

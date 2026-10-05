@@ -1,0 +1,123 @@
+{
+  "label": "search_alpha2_seed20260791",
+  "seed": 20260791,
+  "problem_seed": 20260791,
+  "objective_seed": 20260792,
+  "probability_seed": 20260793,
+  "theta_seed": 20260794,
+  "problem_type": "maxcut",
+  "objective_name": "uncut_edges",
+  "objective_label": "mean uncut edges",
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_edges": 16,
+  "edges": [
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_uncut_edges": 16,
+  "exact_enumerated": true,
+  "exact_min_uncut_edges": 4,
+  "exact_max_uncut_edges": 16,
+  "exact_max_cut_edges": 12,
+  "num_exact_min_assignments": 4,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 8,
+      "initial_loss": 15.46171875,
+      "final_loss": 14.314062500000002,
+      "best_loss": 14.314062500000002,
+      "loss_span": 1.1476562499999972,
+      "loss_drop_to_best": 1.1476562499999972,
+      "batch_range_span": 4.539999999999999,
+      "mean_batch_width": 3.0575
+    },
+    "ME-DQAS": {
+      "objective_updates": 13,
+      "initial_loss": 15.462812499999998,
+      "final_loss": 11.7871875,
+      "best_loss": 11.7871875,
+      "loss_span": 3.6756249999999984,
+      "loss_drop_to_best": 3.6756249999999984,
+      "batch_range_span": 6.76,
+      "mean_batch_width": 4.147692307692308
+    }
+  }
+}

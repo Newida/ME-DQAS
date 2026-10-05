@@ -1,0 +1,25 @@
+{
+  "x_axis": "updates",
+  "metric": "loss",
+  "normalize": "exact-range",
+  "support": "intersection",
+  "num_curves": {
+    "DQAS": 100,
+    "ME-DQAS": 100
+  },
+  "final_mean": {
+    "DQAS": 0.4009951599702379,
+    "ME-DQAS": 0.4010025613839287
+  },
+  "final_ci95": {
+    "DQAS": 0.03905711210828189,
+    "ME-DQAS": 0.0390524549387443
+  },
+  "outputs": [
+    "dataset/100_problem_search/mean_ci_loss_vs_updates.png",
+    "dataset/100_problem_search/mean_ci_loss_vs_updates.pdf",
+    "dataset/100_problem_search/mean_ci_loss_vs_updates.svg"
+  ],
+  "objective_label": "mean violated clauses",
+  "dataset_dir": "dataset/100_problem_search"
+}

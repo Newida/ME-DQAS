@@ -1,0 +1,135 @@
+{
+  "label": "search_alpha2_seed20260700",
+  "seed": 20260700,
+  "problem_seed": 20260700,
+  "objective_seed": 20260701,
+  "probability_seed": 20260702,
+  "theta_seed": 20260703,
+  "n": 8,
+  "alpha": 2.0,
+  "problem_mode": "random",
+  "num_clauses": 16,
+  "clauses": [
+    [
+      -1,
+      -5,
+      5
+    ],
+    [
+      -3,
+      3,
+      -5
+    ],
+    [
+      -2,
+      3,
+      4
+    ],
+    [
+      0,
+      -2,
+      7
+    ],
+    [
+      -3,
+      4,
+      5
+    ],
+    [
+      -2,
+      -4,
+      -6
+    ],
+    [
+      0,
+      1,
+      7
+    ],
+    [
+      3,
+      5,
+      -7
+    ],
+    [
+      2,
+      -4,
+      5
+    ],
+    [
+      1,
+      2,
+      -6
+    ],
+    [
+      0,
+      -2,
+      2
+    ],
+    [
+      1,
+      6,
+      7
+    ],
+    [
+      -3,
+      4,
+      7
+    ],
+    [
+      -3,
+      6,
+      -8
+    ],
+    [
+      -2,
+      -3,
+      5
+    ],
+    [
+      -1,
+      -2,
+      -5
+    ]
+  ],
+  "gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cz"
+  ],
+  "circuit_length": 8,
+  "batch_size": 128,
+  "S_f": 50,
+  "S_theta": 50,
+  "budget": 750000,
+  "parameter_steps": 1,
+  "num_iterations": 100,
+  "theta_init_scale": 0.4,
+  "zero_assignment_violations": 2,
+  "exact_enumerated": true,
+  "exact_min_violations": 0,
+  "exact_max_violations": 6,
+  "num_exact_min_assignments": 11,
+  "selection_metrics": {
+    "DQAS": {
+      "objective_updates": 9,
+      "initial_loss": 1.954375,
+      "final_loss": 1.9056250000000001,
+      "best_loss": 1.8834374999999999,
+      "loss_span": 0.0709375000000001,
+      "loss_drop_to_best": 0.0709375000000001,
+      "batch_range_span": 1.0799999999999998,
+      "mean_batch_width": 0.7533333333333334
+    },
+    "ME-DQAS": {
+      "objective_updates": 14,
+      "initial_loss": 1.95484375,
+      "final_loss": 1.7928125,
+      "best_loss": 1.7928125,
+      "loss_span": 0.16203125000000007,
+      "loss_drop_to_best": 0.16203125000000007,
+      "batch_range_span": 1.2199999999999998,
+      "mean_batch_width": 0.8371428571428573
+    }
+  }
+}
