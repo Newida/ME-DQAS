@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "ME-DQAS: Measurement-Efficient Differentiable Quantum Architecture Search"
+authors:
+  - family-names: Theißinger
+    given-names: Lukas
+    affiliation: University of Bonn
+  - family-names: Gerlach
+    given-names: Thore
+    affiliation: European Space Agency (ESA)
+  - family-names: Bauckhage
+    given-names: Christian
+    affiliation: Lamarr Institute, University of Bonn
+license: CC-BY-4.0
+repository-code: "https://github.com/Newida/ME-DQAS"
+preferred-citation:
+  type: conference-paper
+  title: "Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization"
+  authors:
+    - family-names: Theißinger
+      given-names: Lukas
+    - family-names: Gerlach
+      given-names: Thore
+    - family-names: Bauckhage
+      given-names: Christian
+  collection-title: "IEEE International Conference on Quantum Artificial Intelligence (QAI)"
+  year: 2026
