@@ -89,6 +89,12 @@ Single runs and comparisons can be launched with
 }
 ```
 
+## License
+
+Code and data are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+(see `LICENSE`). You may use, modify and redistribute them, including commercially,
+as long as you give appropriate credit by citing the paper above.
+
 ## Acknowledgment
 
 This work was funded by the Lamarr Institute in Germany.
