@@ -4,7 +4,7 @@ Code and data for the paper
 
 > L. Theißinger, T. Gerlach, C. Bauckhage,
 > *Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization*,
-> IEEE International Conference on Quantum Artificial Intelligence (QAI), 2026.
+> 2026 IEEE 2nd International Conference on Quantum Artificial Intelligence (QAI).
 
 ME-DQAS reduces the number of circuit evaluations needed for DQAS parameter
 gradients when the cost Hamiltonian is diagonal (Ising/QUBO). Gradients are
@@ -84,7 +84,7 @@ Single runs and comparisons can be launched with
 @inproceedings{theissinger2026medqas,
   author    = {Thei{\ss}inger, Lukas and Gerlach, Thore and Bauckhage, Christian},
   title     = {Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization},
-  booktitle = {IEEE International Conference on Quantum Artificial Intelligence (QAI)},
+  booktitle = {2026 IEEE 2nd International Conference on Quantum Artificial Intelligence (QAI)},
   year      = {2026}
 }
 ```
