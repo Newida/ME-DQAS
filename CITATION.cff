@@ -12,6 +12,10 @@ authors:
     given-names: Christian
     affiliation: Lamarr Institute for Machine Learning and Artificial Intelligence
 license: CC-BY-4.0
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2610.10351"
+    description: "arXiv preprint"
 repository-code: "https://github.com/Newida/ME-DQAS"
 preferred-citation:
   type: conference-paper
@@ -25,3 +29,7 @@ preferred-citation:
       given-names: Christian
   collection-title: "2026 IEEE 2nd International Conference on Quantum Artificial Intelligence (QAI)"
   year: 2026
+  url: "https://arxiv.org/abs/2610.10351"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.10351"
