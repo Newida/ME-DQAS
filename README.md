@@ -18,6 +18,7 @@ standard two-shift parameter-shift rule.
 ```
 src/        DQAS and ME-DQAS implementation, simulator, 3-SAT and MaxCut objectives
 scripts/    experiment runners, dataset builders and plotting scripts
+presentation/  LaTeX (Beamer) slides for the QAI 2026 talk
 dataset/    the exact 100 3-SAT and 100 MaxCut instances and all run logs used in the paper
 ```
 

@@ -1,0 +1,169 @@
+% Copied from the inofficial Lamarr slide template (slide-template-main), biblatex disabled
+% encoding, language, and other basic packages
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{appendixnumberbeamer} % correct number of slides if an appendix exists
+\usepackage[super]{nth}
+\usepackage{url}
+\usepackage{ifthen}
+
+% color palette
+\definecolor{aqua}{RGB}{0, 158, 227} % main colors
+\definecolor{skyblue}{RGB}{89, 189, 247}
+\definecolor{fuchsia}{RGB}{232, 46, 130}
+\definecolor{freshviolet}{RGB}{152, 48, 130}
+\definecolor{softgray}{RGB}{112, 111, 111} % accent colors
+\definecolor{sunshine}{RGB}{255, 188, 41}
+\definecolor{indianred}{RGB}{236, 100, 105}
+\definecolor{carribean}{RGB}{63, 187, 171}
+\definecolor{cornflower}{RGB}{74, 74, 216}
+\definecolor{navy}{RGB}{12, 18, 43} % background colors
+\definecolor{crisp}{RGB}{255, 255, 255}
+\colorlet{color01}{aqua} % aliases for plots
+\colorlet{color02}{freshviolet}
+\colorlet{color03}{carribean}
+\colorlet{color04}{sunshine}
+\colorlet{color05}{fuchsia}
+\colorlet{color06}{cornflower}
+\colorlet{color07}{softgray}
+\colorlet{color08}{indianred}
+\colorlet{color09}{skyblue}
+
+% beamer theme
+\usetheme{metropolis}
+\setbeamersize{text margin left=18pt, text margin right=18pt}
+\setbeamerfont{title}{size=\huge, series=\bfseries}
+\setbeamerfont{author}{size=\large, series=\bfseries}
+\setbeamerfont{date}{size=\normalsize}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamercolor{normal text}{fg=black,bg=crisp}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=crisp}
+\setbeamercolor{date}{fg=crisp}
+\setbeamercolor{frametitle}{fg=black,bg=crisp}
+\setbeamercolor{author in head/foot}{fg=black,bg=crisp}
+\setbeamercolor{progress bar in section page}{fg=aqua,bg=fuchsia}
+\setlength{\metropolis@progressonsectionpage@linewidth}{1.8pt}
+
+% font
+\usepackage{iftex}
+\ifPDFTeX % pdflatex fallback: Helvetica instead of WorkSans
+  \usepackage[scaled=0.92]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+\usepackage[no-math]{fontspec}
+\setsansfont{WorkSans}[
+  Path=fonts/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-SemiBold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-SemiBoldItalic,
+]
+\fi
+\usefonttheme[onlymath]{serif}
+
+\makeatletter
+\setbeamertemplate{title page}{%
+  \makebox[8pt]{}%
+  \begin{minipage}[b][\paperheight]{\textwidth}
+    \vspace*{65pt} % height of purple triangle
+    \vfill%
+    \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+    \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+    \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+    \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+    \vfill%
+    \vspace*{65pt} % height of footer
+  \end{minipage}
+}
+\setbeamertemplate{title}{%
+  \usebeamerfont{title}%
+  \usebeamercolor[fg]{title}%
+  \raggedright%
+  \inserttitle%
+  \par%
+}
+\usebackgroundtemplate{%
+  \includegraphics[width=\paperwidth,height=\paperheight]{img/frame-background.pdf}%
+}
+\setbeamertemplate{frametitle}{%
+  \vspace{9pt}%
+  \nointerlineskip%
+  \tikz\node[
+    text width=\textwidth,
+    inner sep=0pt,
+  ]{%
+    \usebeamerfont{frametitle}%
+    \usebeamercolor[fg]{frametitle}%
+    \metropolis@frametitlestrut@start%
+    \insertframetitle%
+    \nolinebreak%
+    \metropolis@frametitlestrut@end%
+  };
+}
+\setbeamerfont{page number in head/foot}{size=\footnotesize}
+\setbeamertemplate{footline}{%
+  \par\vspace*{-1\metropolis@frametitle@padding}
+  \begin{beamercolorbox}[wd=\textwidth, sep=18pt]{footline}% footcites
+    \usebeamerfont{page number in head/foot}%
+    \usebeamertemplate*{frame footer}
+  \end{beamercolorbox}
+  \ifthenelse{\equal{\insertframenumber}{\string 0}}{}{% author, title, and slide number
+    \par\vspace*{-3.333\metropolis@frametitle@padding}
+    \leavevmode\hbox{%
+      \begin{beamercolorbox}[wd=.33333\paperwidth,ht=2.8ex,dp=1.4ex,left]{author in head/foot}%
+        \hspace{18pt}%
+        \usebeamerfont{author in head/foot}\insertshortauthor
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=.33334\paperwidth,ht=2.8ex,dp=1.4ex,center]{author in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshorttitle
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=.33333\paperwidth,ht=2.8ex,dp=1.4ex,right]{author in head/foot}%
+        \usebeamerfont{author in head/foot}\insertframenumber%
+        \hspace{18pt}
+      \end{beamercolorbox}%
+    }%
+    \vskip6pt%
+  }
+}
+\makeatother
+
+% citations in the footline of each slide: configure \footcite
+% biblatex not installed here; the talk cites inline with \refs
+%\usepackage[style=authortitle,backend=bibtex]{biblatex}
+\usepackage[norule,para,bottom]{footmisc}
+\usepackage{xpatch}
+%\xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
+
+% title frame
+\newcommand{\maketitleframe}{%
+  \begin{frame}[noframenumbering]
+    \noindent
+    \begin{tikzpicture}[overlay, remember picture] % set the background
+      \node at (current page.center)
+        {\includegraphics[width=\paperwidth]{img/title-background.pdf}};
+    \end{tikzpicture}
+    \maketitle % title, author, date
+  \end{frame}
+}
+
+% standout frame
+\newcommand{\standout}[1]{%
+  \begin{frame}[plain]{}
+    \noindent
+    \begin{tikzpicture}[overlay, remember picture] % set the background
+      \node at (current page.center)
+        {\includegraphics[width=\paperwidth]{img/standout-background.pdf}};
+    \end{tikzpicture}
+    \usebeamerfont{title}\usebeamercolor[fg]{title}%
+    \vfill
+    \centering
+    #1\par%
+    \vfill
+  \end{frame}
+}
+
+% section frames
+\AtBeginSection[]{\standout{\insertsectionhead}}
